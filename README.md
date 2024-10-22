@@ -1,5 +1,7 @@
 # Hugo CV Theme
 
+![Cover Image](static/cover.png)
+
 Theme for create minimalistic multilingual CV site.
 
 ## Live Demo
