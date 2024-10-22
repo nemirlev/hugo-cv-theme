@@ -1,0 +1,77 @@
+{{ define "main" }}
+    {{ $articles := where .Site.RegularPages ".Type" "articles" }}
+    {{ if $articles }}
+        <section class="section" id="articles">
+            <h2>{{ i18n "articles" }}</h2>
+            {{ range $articles }}
+                <div class="article-item">
+                    <span class="article-title"><a href="{{ .Params.source_url }}"
+                                                   target="_blank">{{ .Title }}</a></span>
+                    <span class="article-date"> — {{ .Date | dateFormat "02 January 2006" }}</span>
+                </div>
+            {{ end }}
+        </section>
+    {{ end }}
+
+    {{ $publications := where .Site.RegularPages ".Type" "publications" }}
+    {{ if $publications }}
+        <section class="section" id="publications">
+            <h2>{{ i18n "publications" }}</h2>
+            {{ range $publications }}
+                <div class="publication-item">
+                <span class="publication-title"><a href="{{ .Params.source_url }}"
+                                                   target="_blank">{{ .Title }}</a></span>
+                    <span class="publication-date"> — {{ .Date | dateFormat "02 January 2006" }}, </span>
+                    <span class="publication-source">{{ .Params.source }}</span>
+                </div>
+            {{ end }}
+        </section>
+    {{ end }}
+
+    {{ $events := where .Site.RegularPages ".Type" "events" }}
+    {{ if $events }}
+        <section class="section" id="events">
+            <h2>{{ i18n "events" }}</h2>
+            {{ range $events }}
+                <div class="event-item">
+                    <div class="event-role">{{ .Params.role }}</div>
+                    <span class="event-title">{{ .Title }}</span> — {{ .Date | dateFormat "02 January 2006" }}
+                    , {{ .Params.location }}
+                    <div class="event-description">{{ .Params.description }}</div>
+                    {{ if .Params.presentation }}
+                        <a href="{{ .Params.presentation }}" class="event-link" download>{{ i18n "presentation" }}</a>
+                    {{ end }}
+                    {{ if .Params.video }}
+                        | <a href="{{ .Params.video }}" class="event-link" target="_blank">{{ i18n "video" }}</a>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </section>
+    {{ end }}
+
+    {{ $experience := index .Site.Data.experience .Site.Language.Lang }}
+    {{ if $experience }}
+        <section class="section" id="experience">
+            <h2>{{ i18n "experience" }}</h2>
+            {{ range $experience }}
+                <div class="experience-item">
+                    <div class="company">{{ .company }}</div>
+                    {{ range .positions }}
+                        <div class="job-title"><span>{{ .title }}</span>, {{ .period }}</div>
+                        <div class="description">
+                            {{ if eq (printf "%T" .responsibilities) "string" }}
+                                <p>{{ .responsibilities }}</p>
+                            {{ else }}
+                                <ul class="responsibilities">
+                                    {{ range .responsibilities }}
+                                        <li>{{ . }}</li>
+                                    {{ end }}
+                                </ul>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </section>
+    {{ end }}
+{{ end }}

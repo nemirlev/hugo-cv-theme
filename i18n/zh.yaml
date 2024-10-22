@@ -1,0 +1,15 @@
+avatar_alt: "头像"
+full_name: "Lev Nemirovskii"
+pm: "私信"
+channel: "频道"
+bio: "在IT行业14年，我从网页开发员成长为CTO。我专注于管理跨职能团队、开发、分析、DevOps和架构。我从零开始启动了20k+ RPS的高负载项目。在空闲时间，我在高等经济学院教学，在IT会议上发言，写文章，做导师。我对旅行、摩托车和音乐的热情补充了我的技术活动，帮助我保持创造性地解决复杂问题的方法。"
+download_resume: "下载简历"
+resume_file: "files/CV_Nemirovskii_Lev_CH.pdf"
+
+# Existing translations
+articles: "文章"
+publications: "媒体出版物"
+events: "活动参与"
+experience: "工作经验"
+presentation: "演讲"
+video: "视频"

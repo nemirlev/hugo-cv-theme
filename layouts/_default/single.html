@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <article class="section">
+        <h1>{{ .Title }}</h1>
+        {{ if .Date }}
+            <time>{{ .Date.Format "2006-01-02" }}</time>
+        {{ end }}
+        {{ .Content }}
+    </article>
+{{ end }}

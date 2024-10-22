@@ -1,0 +1,15 @@
+avatar_alt: "Avatar"
+full_name: "Lev Nemirovskii"
+pm: "PM"
+channel: "Channel"
+bio: "With 14 years in IT, I have progressed from a web developer to CTO. I specialize in managing cross-functional teams, development, analytics, DevOps, and architecture. I have launched high-load projects from scratch with 20k+ RPS. In my free time, I teach at HSE, speak at IT conferences, write articles, and mentor. My passion for travel, motorcycles, and music complements my technical activities, helping me maintain a creative approach to solving complex problems."
+download_resume: "Download Resume"
+resume_file: "files/CV_Nemirovskii_Lev_EN.pdf"
+
+# Existing translations
+articles: "Articles"
+publications: "Publications"
+events: "Events"
+experience: "Experience"
+presentation: "Presentation"
+video: "Video"

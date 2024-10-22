@@ -1,0 +1,50 @@
+- company: "Promsvyazbank, PJSC"
+  positions:
+    - title: "Division Head"
+      period: "November 2021 — Present"
+      responsibilities:
+        - "Formed and coordinated the work of a cross-functional team of 50+ specialists, including the management of outstaff resources."
+        - "Led the launch of a high-load international educational platform from concept to successful production."
+        - "Developed and implemented architectural solutions that ensured high scalability and security of the system."
+        - "Initiated and supervised the implementation of DevOps practices, setting performance metrics to optimize development processes."
+        - "Standardized development processes and introduced tools to improve code quality and team productivity."
+        - "Effectively interacted with stakeholders, presenting projects to top management."
+    - title: "Team Lead"
+      period: "May 2020 — November 2021"
+      responsibilities:
+        - "Formed and led a cross-functional team of 7 specialists for a recruitment automation project."
+        - "Conducted requirements analysis, developed system architecture, and actively participated in product planning."
+        - "Led the development of a career portal and implemented E-staff."
+        - "Designed and coordinated the development of integrations with key systems (SAP, E-Staff, corporate portal)."
+        - "Developed and implemented API processes, improving interaction efficiency between systems and people."
+        - "Implemented CI/CD processes and test automation, significantly speeding up release cycles."
+        - "Provided mentoring and contributed to the professional development of team members."
+- company: "United Confectioners"
+  positions:
+    - title: "Team Lead"
+      period: "September 2019 — May 2020"
+      responsibilities:
+        - "Managed the development and support of a high-load online store on PHP (Bitrix)."
+        - "Optimized system performance and improved user experience."
+        - "Implemented CI/CD to simplify and control build and deployment processes."
+        - "Developed integrations with the MindBox CRM system and medical services using the HL7 standard."
+        - "Introduced a testing process and developed internal PHP libraries."
+- company: "Lev Group"
+  positions:
+    - title: "Co-founder and Technical Director"
+      period: "September 2015 — September 2019"
+      responsibilities:
+        - "Developed the technological strategy and optimized the IT budget of the agency."
+        - "Introduced Agile methodologies and project management tools."
+        - "Standardized solutions (1C-Bitrix, Laravel, React, Angular), reducing development time and ensuring predictable project scalability."
+        - "Implemented DevOps practices, reducing the time to launch new projects and decreasing the Time to Market for ongoing projects."
+        - "Optimized recruitment processes, reducing costs and speeding up recruitment."
+        - "Introduced a KPI system for assessing project and development team performance."
+- company: "Freelance"
+  positions:
+    - title: "Web Developer"
+      period: "January 2010 — August 2015"
+      responsibilities:
+        - "Developed websites on WordPress, Magento, and 1C-Bitrix."
+        - "Full project lifecycle: from requirements analysis to support."
+        - "Worked with a variety of projects and clients from different industries."

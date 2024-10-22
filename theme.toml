@@ -1,0 +1,15 @@
+name = 'Hugo CV Theme'
+license = 'MIT'
+licenselink = 'https://github.com/nemirlev/hugo-cv-theme/LICENSE'
+description = 'Theme for create minimalistic personal CV website'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/nemirlev/hugo-cv-theme'
+
+# If you have a running demo of the theme
+demosite = 'https://levn.me'
+
+# If the theme has a single author
+[author]
+  name = 'Lev Nemirovskii'
+  homepage = 'levn.me'
