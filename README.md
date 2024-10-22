@@ -10,19 +10,19 @@ See a live demo @ [levn.me](https://levn.me/)
 
 ## Quick Start
 
-For fresh Hugo site:
+**For fresh Hugo site:**
 
-1. Install Hugo and theme
+* Install Hugo and theme
 ```bash
-$ hugo new site mycv
-$ cd mycv
-$ git init
-$ git submodule add https://github.com/nemirlev/hugo-cv-theme themes/hugo-cv-theme
+hugo new site mycv
+cd mycv
+git init
+git submodule add https://github.com/nemirlev/hugo-cv-theme themes/hugo-cv-theme
+```
+* Configure your hugo.toml. See `Configuration` below.
+* Build your site with `hugo server` and see the result at http://localhost:1313/.
 
-2. Configure your hugo.toml. See `Configuration` below.
-3. Build your site with `hugo server` and see the result at http://localhost:1313/.
-
-Or you can use example site from this repo:
+**Or you can use example site from this repo:**
 
 ```bash
 git clone https://github.com/nemirlev/hugo-cv-site.git
