@@ -1,25 +1,25 @@
 <div class="language-switcher">
     {{ range .Translations }}
-        <a href="{{ .Permalink }}"
+        <a href="{{ .RelPermalink }}"
            class="language-link{{ if eq . $.Site.Language }} active{{ end }}">{{ .Language.LanguageName }}</a>
     {{ end }}
 </div>
 
-<img src="/img/avatar.jpeg" alt="{{ i18n "avatar_alt" }}" class="avatar">
+<img src="{{ "/img/avatar.jpeg" | relURL }}" alt="{{ i18n "avatar_alt" }}" class="avatar">
 <h1>{{ i18n "full_name" }}</h1>
 <div class="social-links">
     <a href="https://t.me/nemirlev" target="_blank" class="social-link">
-        <img src="/icons/telegram-blue.svg" alt="Telegram" class="social-icon"> {{ i18n "pm" }}
+        <img src="{{ "/icons/telegram-blue.svg" | relURL }}" alt="Telegram" class="social-icon"> {{ i18n "pm" }}
     </a>
     <a href="https://t.me/bodrcoder" target="_blank" class="social-link">
-        <img src="/icons/telegram-black.svg" alt="Telegram" class="social-icon"> {{ i18n "channel" }}
+        <img src="{{ "/icons/telegram-black.svg" | relURL }}" alt="Telegram" class="social-icon"> {{ i18n "channel" }}
     </a>
     <a href="https://github.com/nemirlev" target="_blank" class="social-link">
-        <img src="/icons/github.svg" alt="GitHub" class="social-icon"> GitHub
+        <img src="{{ "/icons/github.svg" | relURL }}" alt="GitHub" class="social-icon"> GitHub
     </a>
     <a href="https://getmentor.dev/mentor/lev-nemirovskiy-3637" target="_blank" class="social-link">
-        <img src="/icons/gmentor.svg" alt="GetMentor" class="social-icon"> GetMentor
+        <img src="{{ "/icons/gmentor.svg" | relURL }}" alt="GetMentor" class="social-icon"> GetMentor
     </a>
 </div>
 <p>{{ i18n "bio" | safeHTML }}</p>
-<a href="{{ i18n "resume_file" }}" target="_blank" class="resume-link">{{ i18n "download_resume" }}</a>
+<a href="{{ i18n "resume_file" | relURL }}" target="_blank" class="resume-link">{{ i18n "download_resume" }}</a>
